@@ -26,10 +26,12 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a string variable called "name" and set it to 'Dane'.
+// We then check if the variable "name" is equal to 'Mary'; 
+// If the variable is strictly equal to 'Mary', then the console log will say 'Hi, Mary!'.
+// If the variable name is NOT equal to 'Mary', then the console log will say 'How do you do?'
+// In this code example, the console log will show 'How do you do?' because the variable was already set to 
+// 'Dane' and is not equal to 'Mary'.
 
 //CODE
 /*
@@ -45,10 +47,15 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// First we create a variable called "secret" but do not assign it a value;
+// we create another variable called "code" and set it to be a number variable with: 123.
+// Then we check if the variable "code" is strictly equal to 123, in which case variable "secret" will then 
+// be set to string a value of 'super', and variable "code" will be changed to multiply x2 its original value.
+// (The value of "code" goes from 123 and then becomes 246 after this calculation)
+// Then the next line of code checks if the variable "code" is greater than 250. If the value of "code" is greater than 250,
+// the variable "secret" will be assigned a string value of 'duper'.
+// At this time, the value of "code" is still 246 and therefore NOT greater than 250.
+// Finally, after these calculations, the console log will display 'super' aka the value of variable "secret".
 
 //CODE
 /*
@@ -70,10 +77,17 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// First declare a variable "isStudent" and assign it a boolean value of true. 
+// Declare a variable "age" and assign it a number value of 34.
+// Declare a variable "zip" and assign it a number calue of 55407.
+// Then, use a compound conditional statement to check if variable "isStudent" is true AND the zip value is greater than 8000. 
+// If both these things are true, the console log will show 'You're a student on the West Coast!'
+// If one or neither of these are true, the code will then check (using a conditional statement) if variable "isStudent" is false AND/OR age is less than 30.
+// If one of these conditions are met, the console log will show 'What are your hobbies?'
+// If NEITHER of these conditions are met, the code will then check if variable "isStudent" is true and console log will show 'Welcome to Prime!'
+// Finally, if NONE of the above conditions are met, the console log will show 'How about the weather?' 
+// In this scenario, console log will show 'Welcome to Prime!' because "isStudent" is set to value 'true', zip is less than 8000,
+// and age is greater than 30. 
 
 //CODE
 /*
