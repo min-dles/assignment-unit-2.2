@@ -145,11 +145,15 @@ if (number >= 2) {
 
 /*
 let colorOne = 'red';
+//FIX: string value for colorOne should be 'blue' not 'red'.
 let colorTwo = 'blue';
+//FIX: string value for colorTwo should be 'red' not 'blue'. 
 let mix = true;
 
 if (mix === true) {
   colorOne = 'purple';
+  //FIX: colorTwo should also be set to 'purple'. Need to add another line of code, perhaps...
+  //colorTwo = colorOne;
 }
 */
 
@@ -160,8 +164,14 @@ if (mix === true) {
 /*
 let temp = 40;
 const time = 4;
+//POSSIBLE FIX: Because time is likely changing in this code example and is being checked in conditional comparison below,
+// it might be better to declare it as a variable (rather than declaring "time" is a constant)
 
 if (temp > 39 || time >= 4) {
+  //FIX: in this case, the code would work because at least one of the statements is true. However per the description,
+  //we want to check if BOTH are true. So the conditional statement should probably use logical AND (&&) conjunction operator 
+  //instead of logical OR (||) disjunction operator. The code would instead be:
+  // if (temp > 39 && time >= 4) {
   console.log('throw away the food!');
 }
 */
@@ -175,9 +185,21 @@ let age = 21;
 const minAge = 21;
 
 if(minAge <= age) {
+  //FIX: need to check if age is GREATER than or equal to minAge, so we should probably switch these variable and constant around:
+  // if(age >= minAge){
   console.log('no entry');
+  //SECOND FIX: after calculating age is greater than or equal to minAge, console.log should be 'enter' on this line. If the 
+  //condition is met (age is greater than or equal to minAge), then console.log says 'enter'.
 } else {
   console.log('enter');
+  //THIRD FIX: if the condition is NOT met (age is less than minAge), we want console.log to show 'no entry'. So this line of 
+  //code should be: console.log('no entry');
 }
+
+//FIX EXPLANATION: in some ways, the code on this example would logically work, but because it's all backwards, there is an 
+//issue with the "age equals minAge" part of the code. In the description, using this code as it's originally written would
+//make the console.log read 'no entry' because of this logical error (rather than the description states 'enter', since 
+//both age and minAge are 21 in this example).
+
 */
 
